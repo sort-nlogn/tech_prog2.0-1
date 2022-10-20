@@ -19,10 +19,7 @@ class Book: public Stuff{
 
         string get_author_book();
         void set_author_book(string author);
-
-        void set_author_stationery(string author);
-        string get_author_stationery();
-
+        
         void set_annotation_book(string annotation);
         string get_annotation_book();
 

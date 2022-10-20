@@ -3,7 +3,7 @@
 #include "Book.hpp"
 
 Book::Book(){
-    std::cout << "Stationery default constructor has been called" << std::endl;
+    std::cout << "Book default constructor has been called" << std::endl;
 }
 
 Book::Book(string name, string author, string annotation, string genere, int pages, int cost, int release_year): 
@@ -71,7 +71,7 @@ int Book::get_cost_book(){
 }
 
 void Book::set_release_year_book(int release_year){
-    check_condition(pages > 0, "Release year must be positive number"); this->pages = pages;
+    check_condition(release_year > 0, "Release year must be positive number"); this->pages = pages;
 }
 
 int Book::get_release_year_book(){
