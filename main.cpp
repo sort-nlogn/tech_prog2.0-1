@@ -1,23 +1,24 @@
 #include <iostream>
 #include <string>
 
-class Stuff{
+// class Stuff{
 
-};
+// };
 
-class Book: public Stuff{
-    std::string name, author, annotation, genere, release_year;
-    int pages, cost;
-};
+// class Book: public Stuff{
+//     std::string name, author, annotation, genere, release_year;
+//     int pages, cost;
+// };
 
-class Schoolbook: public Stuff{
-    std::string uni_name;
-};
+// class Schoolbook: public Stuff{
+//     std::string uni_name;
+// };
 
-class Stationery: public Stuff{
+// class Stationery: public Stuff{
     
-};
+// };
 
 int main(){
+    printf("Lessssgo buddy!!!!");
     return 0;
 }

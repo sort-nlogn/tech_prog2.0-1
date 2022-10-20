@@ -9,10 +9,10 @@ class Stuff{
             SCHOOLBOOK
         };
 
-    Stuff();
-    ~Stuff();
-
-    virtual variant get_type() = 0;
-    virtual void describe() = 0;
-    void check_condition(bool condition, std::string err_message);
+        Stuff();
+        ~Stuff();
+    
+        virtual variant get_type() = 0;
+        virtual void describe() = 0;
+        void check_condition(bool condition, std::string err_message);
 };

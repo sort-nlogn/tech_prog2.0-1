@@ -47,7 +47,7 @@ string Stationery::get_color_stationery(){
     return this->color;
 }
 
-void Stationery::set_const_stationery(int cost){
+void Stationery::set_cost_stationery(int cost){
     check_condition(cost > 0, "Cost must be positive"); 
 }
 

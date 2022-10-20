@@ -1,7 +1,7 @@
 #pragma once
 #include "Stuff.hpp"
 
-using namespace  std;
+using namespace std;
 
 class Stationery: public Stuff{
     private:
@@ -9,10 +9,10 @@ class Stationery: public Stuff{
         int cost;
 
     public:
-        Stationery::Stationery();
-        Stationery::Stationery(string type, string purpose, string color, int cost);
-        Stationery::Stationery(const Stationery &other);
-        Stationery::~Stationery();
+        Stationery();
+        Stationery(string type, string purpose, string color, int cost);
+        Stationery(const Stationery &other);
+        ~Stationery();
 
         void set_type_stationery(string type);
         string get_type_stationery();
@@ -20,7 +20,7 @@ class Stationery: public Stuff{
         string get_purpose_stationery();
         void set_color_stationery(string color);
         string get_color_stationery();
-        void set_const_stationery(int cost);
+        void set_cost_stationery(int cost);
         int get_cost_stationery();
 
         variant get_type() override;
