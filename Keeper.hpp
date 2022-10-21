@@ -27,8 +27,10 @@ class Keeper{
         void add(Stuff *stuff);
         void print();
         void remove(int pos);
-        void save_to_file(fstream &in, string path);
-        void load_from_file(fstream &in, string path);
+        void save_to_file(string path);
+        void load_from_file(string path);
         void edit(int pos);
+        void free();
+        string *split(string str, string delimiter, int count);
         Stuff *get(int pos);
 };

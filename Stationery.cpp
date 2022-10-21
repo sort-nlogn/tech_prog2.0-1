@@ -60,8 +60,7 @@ Stuff::variant Stationery::get_type(){
 }
 
 void Stationery::describe(){
-    printf("Stationey. Type: %s, Purpose %s, Color: %s, Cost: %d", 
-    this->type, this->purpose, this->color, this->cost);
+    cout << "Stationery. Type: " << this->type << " Purpose: " << this->purpose << " Color: " << this->color << " Cost: " << this->cost << endl;
 }
 
 std::istream& operator>> (std::istream &in, Stationery &st){

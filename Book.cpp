@@ -83,8 +83,8 @@ Stuff::variant Book::get_type(){
 }
 
 void Book::describe(){
-    printf("Book. Name: %s, Author %s, Annotation: %s, Genere: %s Pages: %d Cost: %d Release year: %d", 
-    this->name, this->author, this->annotation, this->genere, this->pages, this->cost, this->release_year);
+    cout << "Book. Name: " << this->name << " Author: " << this->author<< " Annotation: " << this->annotation << " Genere: " << this->genere << " Cost: " << 
+    this->cost << " Pages: " << this->pages << " Release year: " << this->release_year <<endl;
 }
 
 std::istream& operator>> (std::istream &in, Book &b){

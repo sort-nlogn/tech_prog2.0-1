@@ -83,8 +83,8 @@ Stuff::variant Schoolbook::get_type(){
 }
 
 void Schoolbook::describe(){
-    printf("Schoolbook. Name: %s, Author %s, University name: %s, Pages: %d Cost: %d Release year: %d Class number: %d", 
-    this->name, this->author, this->uni_name, this->pages, this->cost, this->release_year, this->class_number);
+    cout << "Schoolbook. Name: " << this->name << " Author: " << this->author<< " University name: " << this->uni_name << " Cost: " << 
+    this->cost << " Pages: " << this->pages << " Release year: " << this->release_year << " Class number: " << this->class_number << endl;
 }
 
 std::istream& operator>> (std::istream &in, Schoolbook &b){
