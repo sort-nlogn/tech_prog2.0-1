@@ -7,7 +7,7 @@ using namespace std;
 void show_menu() {
     cout << "1 - add a new element\n2 - print collection\n3 - edit collection\n4 - delete element\n" <<
     "5 - load from file\n6 - save to the file\n" <<
-    "7 - clear collection\n8 - exit\n\n";
+    "7 - clear collection\n8 - calculate total cost\n9 - exit\n";
 }
 
 int main(){
@@ -49,6 +49,8 @@ int main(){
         }else if(action == 7){
             keeper->free();
         }else if(action == 8){
+            cout << "Total cost: " << keeper->total_cost() << endl;
+        }else if(action == 9){
             stop = true;
         }else{
             cout << "No such action" << endl; break;

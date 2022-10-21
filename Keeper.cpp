@@ -226,3 +226,23 @@ void Keeper::save_to_file(string path){
     }
     out.close();
 }
+
+int Keeper::total_cost(){
+    int ans = 0;
+    if (!size) return ans;  
+    Node *curr = head;
+    Node *next = nullptr;
+
+    while (curr != nullptr) {
+        if(curr->stuff->get_type() == Stuff::variant::STATIONERY){
+            ans += ((Stationery *)curr->stuff)->get_cost_stationery();
+        }else if(curr->stuff->get_type() == Stuff::variant::BOOK){
+            ans += ((Book *)curr->stuff)->get_cost_book();
+        }else if(curr->stuff->get_type() == Stuff::variant::SCHOOLBOOK){
+            ans += ((Schoolbook *)curr->stuff)->get_cost_schoolbook();
+        }
+        next = curr->next;
+        curr = next;
+    }
+    return ans;
+}

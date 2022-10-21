@@ -31,6 +31,7 @@ class Keeper{
         void load_from_file(string path);
         void edit(int pos);
         void free();
+        int total_cost();
         string *split(string str, string delimiter, int count);
         Stuff *get(int pos);
 };
